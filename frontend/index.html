@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Recommender System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <h2>🎬 Movie Recommender</h2>
+        <span class="status">Discover your next movie</span>
+    </header>
+
+    <main>
+        <section class="hero">
+            <p class="tagline">YOUR PERSONAL MOVIE GUIDE</p>
+            <h1>Find Your Next<br><span>Favorite Movie.</span></h1>
+            <p class="description">
+                Enter a movie you love, and we'll recommend similar movies
+                using our intelligent recommendation system.
+            </p>
+
+            <form id="recommendation-form">
+                <input
+                    type="text"
+                    id="movie-title"
+                    placeholder="Enter a movie, e.g. Inception"
+                    required
+                >
+                <button type="submit">Get Recommendations</button>
+            </form>
+
+            <p id="message" role="status"></p>
+        </section>
+
+        <section class="results-section">
+            <h2 id="results-title">Ready to discover something new?</h2>
+            <p id="results-description">
+                Your recommended movies will appear here.
+            </p>
+            <div id="recommendations" class="movie-grid"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Movie Recommender System | Built with Python and FastAPI</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
